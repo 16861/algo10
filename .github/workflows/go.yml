@@ -26,6 +26,6 @@ jobs:
 
     - name: Build
       run: 
-        cd algo10_1
-        go build -v .
-        go test
+        cd algo10_1;
+        go build -v . ;
+        go test ;
