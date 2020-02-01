@@ -23,8 +23,9 @@ jobs:
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             dep ensure
         fi
-        cd algo10_1
-        go test
 
     - name: Build
-      run: go build -v .
+      run: 
+        cd algo10_1
+        go build -v .
+        go test
